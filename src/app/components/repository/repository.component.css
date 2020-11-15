@@ -1,0 +1,17 @@
+div {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+}
+
+p { 
+    margin-top: 10px;
+}
+
+a {
+    color: #7159c1;
+    text-decoration: none;
+}

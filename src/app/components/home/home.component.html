@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="header">
+        <mat-icon class="icone" aria-hidden="false" aria-label="Example home icon">cloud_upload</mat-icon>
+        <h1>
+            {{title}}
+        </h1>
+    </div>
+
+    <div class="form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Informe o repositório do GitHub</mat-label>
+            <input matInput placeholder="Ex. angular/angular" [(ngModel)]="repositoryName">
+        </mat-form-field>
+        <button mat-mini-fab color="primary" (click)="addRepository()">
+            <mat-icon>playlist_add</mat-icon>
+        </button>
+
+    </div>
+    <p>{{message}}</p>
+    <app-repository *ngFor="let repository of repositoryList"
+        [repo]="repository" 
+    ></app-repository>
+</div>
